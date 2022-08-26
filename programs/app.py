@@ -64,17 +64,17 @@ def program():#the program
     socialLink = Button(window, text="Edit\nsocialLinks", fg="white", bg="blue", font=('verdana', 10, 'bold'), command=editSocial)
     socialLink.pack(side=TOP, expand=True, fill=X)
 
-    # def GitUpdate():
-    #     try:
-    #         repo = Repo(gitRepo)
-    #         repo.git.add(update=True)
-    #         repo.index.commit(str(input('Commit:')))
-    #         origin = repo.remote(name='origin')
-    #         origin.push()
+    def GitUpdate():
+        try:
+            repo = Repo(gitRepo)
+            repo.git.add(update=True)
+            repo.index.commit(str(input('Commit:')))
+            origin = repo.remote(name='origin')
+            origin.push()
 
-    #     except:
-
-    #         print("ERROR!!")
+        except:
+            
+            print("ERROR!!")
 
     updateBtn = Button(window, text="Update website", fg="white", bg="darkred", font=('verdana', 20, 'bold'), command=GitUpdate)
     updateBtn.pack(side=BOTTOM,fill=X)
