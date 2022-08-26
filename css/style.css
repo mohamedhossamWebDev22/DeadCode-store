@@ -1,0 +1,450 @@
+body,html{
+    scroll-behavior: smooth;
+
+    color: white;
+    background-color: rgb(19, 19, 19);
+}
+
+#top{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30;
+
+    z-index: 99;
+
+    border:1px solid black;
+
+    background-color: orange;
+    color: rgb(19, 19, 19);
+
+    cursor: pointer;
+
+    padding: 15px;
+    margin: 15px;
+
+    border-radius: 20px;
+
+    font-size: 30px;
+}
+#top:hover{
+    opacity: 0.8;
+}
+
+#imgP{
+    border-radius: 30px;
+}
+
+#imgP2{
+    border-radius: 30px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+    text-align: center;
+
+    border: 1px solid orange;
+}
+.nav .title{
+    font-size: 55px;
+    font-family: fantasy;
+
+    width: 50%;
+    
+    color: orange;
+    background-color: rgb(19, 19, 19);
+}
+.nav .one{
+    font-size: 38px;
+    font-family: 'Courier New', Courier, monospace;
+
+    padding: 14px 14px;
+
+    width: 25%;
+
+    color: rgb(10, 10, 10);
+    background-color: orange;
+}
+.nav .two{
+    font-size: 38px;
+    font-family: 'Courier New', Courier, monospace;
+
+    padding: 14px 14px;
+
+    width: 25%;
+
+    color: black;
+    background-color: orange;
+}
+.nav a{
+    color:rgb(19, 19, 19);
+
+    text-decoration: none;
+}
+
+.landing{
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 3%;
+}
+.landing .txt{
+    font-family: sans-serif;
+    font-size: 27px;
+}
+.landing h2{
+    width: 67%;
+}
+.landing h2 p{
+    font-family: 'Courier New', Courier, monospace;
+
+    color: darkred;
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+.landing .photo img{    
+    border-radius: 100%;
+}
+
+.skills{
+    margin-top: 3%;
+
+    border: 1px solid orange;
+}
+.skills h1{
+    padding-left: 2%;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+.skills .proBar{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 2%;
+
+    border-radius: 50px;
+
+    background-color: rgb(175, 175, 175);
+}
+.skill{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+
+    font-family: sans-serif;
+    font-size:20px;
+}
+
+.unity{
+    animation:forwards prograss 5s;
+    background-color: rgb(163, 15, 45);
+
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.c{
+    animation: forwards prograss1 5s;
+    background-color: rgb(163, 15, 45);
+
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.godot{
+    animation: forwards prograss2 5s;
+    background-color: rgb(163, 15, 45);
+
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.gd{
+    animation: forwards prograss3 5s;
+    background-color: rgb(163, 15, 45);
+
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+
+
+
+.games{
+    text-align: center;
+
+    margin-top: 3%;
+
+    border: 1px solid rgb(163, 15, 45);
+}
+.games .title{
+    font-size: 30px;
+    font-family: sans-serif;
+
+    margin-bottom: 5%;
+
+    color: orange;
+}
+.games .g{
+    display: flex;
+    justify-content: space-evenly;
+
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+.games .g .card{
+    padding: 14px 10px;
+    margin: 10px 10px;
+
+    border-radius: 50px;
+    border: 1px solid orange;
+}
+.games .g .card img{
+    border-radius: 20px;
+}
+.games .g .card h1{
+    color: orange;
+
+    font-family: monospace;
+    font-size: 26px;
+}
+.games .g .card h3{
+    white-space: normal;
+
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.games .g .card .down{
+    color: white;
+
+    background-color: orange;
+
+    display: block;
+
+    font-size: 30px;
+    font-family: sans-serif;
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    margin: 12px 12px;
+}
+.games .show{
+    display: block;
+    text-align: center;
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 20px;
+
+    padding: 14px 14px;
+
+    font-size: 40px;
+    font-family: sans-serif;
+
+    text-decoration: none;
+
+    margin-bottom: 2%;
+
+    color: white;
+    background-color: orange;
+}
+
+.down:hover{
+    opacity: 0.8;
+}
+.show:hover{
+    opacity: 0.8;
+}
+
+.detail{
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 6%;
+    padding-top: 8%;
+
+    background-color: orange;
+}
+.detail .img{
+    order: 0;
+
+    margin: 20px 20px;
+}
+.detail .img img{
+    border-radius: 100px;
+}
+
+.detail .txt h1{
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    white-space: pre;
+
+    text-align: left;
+}
+
+.fa{
+    padding: 10px;
+
+    font-size: 30px;
+
+    width: 30px;
+
+    border-radius: 50%;
+
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.8;
+}
+.fa-brands{
+    padding: 10px;
+
+    font-size: 40px;
+
+    width: 30px;
+
+    border-radius: 50%;
+
+    text-align: center;
+    text-decoration: none;
+}
+.fa-brands:hover {
+    opacity: 0.8;
+}
+
+
+.fa-facebook {
+    background-color: #3B5998;
+    color: white;
+
+    align-items: center;
+}
+
+.social{
+    display: flex;
+
+    justify-content: space-around;
+}
+.social .tik{
+    border-radius: 50%;
+}
+.social .tik:hover{
+    opacity: 0.8;
+}
+
+.detail .txt{
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+
+
+
+.make{
+    display: flex;
+    flex-direction: row;
+
+    font-size: 10px;
+
+    background-color: rgb(37, 37, 37);
+}
+
+
+
+/*animations*/
+@keyframes typing {
+    from { width: 0 }
+    to { width: 70% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+@keyframes prograss{
+    from {width: 0;}
+    to{width: 88.5%;}
+}
+
+@keyframes prograss1{
+    from {width: 0;}
+    to{width: 80%;}
+}
+
+@keyframes prograss2{
+    from {width: 0;}
+    to{width: 75%;}
+}
+
+@keyframes prograss3{
+    from {width: 0;}
+    to{width: 61%;}
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 760px) {
+    .nav{
+        justify-content: space-evenly;
+    }
+    .nav .title{
+        font-size: 38px;
+    }
+    .nav .one{
+        font-size: 18px;
+
+        width: 20%
+    }
+    .nav .two{
+        font-size: 18px;
+
+        width: 20%;
+    }
+
+    .landing{
+        flex-direction: column-reverse;
+    }
+    .landing h2{
+        width: 100%;
+    }
+    .landing h2 p{
+        font-size: 25px;
+    }
+
+
+    #top{
+        font-size: 20px;
+
+        padding: 10px;
+    }
+
+
+    .detail{
+        flex-direction: column;
+    }
+    .detail .img img{
+        width: 150px;
+    }
+    .detail .txt h1{
+        font-size: 18px;
+
+        white-space: normal;
+    }
+}

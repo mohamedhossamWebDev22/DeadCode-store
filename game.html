@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="img/icon.png">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>My games</title>
+    </head>
+    <body>
+        <div class="content">
+            <button id="top" onclick="goTop()">Top</button>
+
+            <div class="nav">
+                <div class="one"><a href="#game">Games</a></div>
+                <div class="title"><a style="color: orange;" target="_self" href="index.html">DEADCODE</a></div>
+                <div class="two"><a href="#con">Contact</a></div>
+            </div>
+
+            <div id="games" class="games">
+                <div id="gameP" class="g">
+                    <div class="card">
+                        <img src="img/game1.jpg" height="160px" alt="game img">
+                        <h1>1 hour</h1>
+                        <h3>this game made in one hour.(PC)</h3>
+                        <a class="down" target="_blank" href="https://doc-08-7s-docs.googleusercontent.com/docs/securesc/cmcebddu0756v57dti70ssfce0kh88lt/emupucgodb8dd709rmn9a75dlr3j2jjl/1661270100000/13206948309297713483/13206948309297713483/1t8SLUh40LR0GCOfwOC-Z66uwqHa4IREp?e=download&ax=AI9vYm6y5z7sSzjjbCcb3jdM1M8FqquWJL7lcTMsQOm1m0DAoogANYcsWvR6VkiC6RPt6U8dpBsE_zpcsZDY3VmjbSCAs3J5elQ76yj__E03WJQqzSRB-Q86odHASAon3UfjjvQvSE-pLlQeSMOr1MrQwvVbSccBvTxbF9GaMmRv0Ih5p5CGvbUkG1IwDasuFCgCsIAy_GIfNeF819g3Ti-m9lrubB91bNZFXd_GoDTngxlOrYEuMzMWbAphPp27HARgtqZ1-aGy1aqyhDu1sRizQWsP5VI8ngVrhStmdWBurGmDfBzCQpDAHumRGWC-QK-ldlCMwF-zZt6K-VthLUGiWqVUKBWspjuw7ba2zK7qONq-WYCbBZ2iVLBUagFTUITQu0hwUmAO_VNNpe_Q0pyx0HVCmpg4vPSB6NXLALbtSTeVBRosytZ8GfegIoK1ZuMV3Lj1eVuT2O4b6lZ4jpgRlLlwSYzCwYW390xjajqlFiFkEV_owIub2UNuxeXsNQgTUu0IHGRQPAiOh7dAK7bBsrJTEdHIFAEeLfJrKrreMwBMyyOGHOY_6L14txUX1qDi3sRJ1vn2gHfEJMH0H_2adT7QXaDeiIca4wxfaVkkdi-rzyNcKWu1kOuHT7fOGlb7wfGJQHMd3qNg7AZO5bksmUt5gk-ltlGdUBLGkjFr6oEtW6IVzlSaWxfaxyekbrxgQkHV6ZUrwTito0r5HBwQNSUtnZRYNKPM_pzkStd5yZjjkx_mIa2Anl4&uuid=d35ad455-d147-451d-abd0-803230e116c8&authuser=0&nonce=v8c77qi014dh6&user=13206948309297713483&hash=j1umrdo3j98hthm9ptetnndh0kq35ejb"><i class="fa fa-download"></i> Download</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/game2.jpg" height="160px" alt="game img">
+                        <h1>Scary maze</h1>
+                        <h3>Escape from the monster at the scary maze.(PC)</h3>
+
+                        <a class="down" target="_blank" href="https://doc-14-7s-docs.googleusercontent.com/docs/securesc/cmcebddu0756v57dti70ssfce0kh88lt/d8u5mjgcq88bt2guv1djoq0vd4tbcjer/1661203350000/13206948309297713483/13206948309297713483/1q9SVI4TZz4oQMPgtZkvKHmiC7MQDW0Vn?e=download&ax=AI9vYm7Yz4qB1b8fvS93sr21ZiwI1dqPyi0j-yf4KEiZVykziFv5de5Abo5PbnCbt3mkPyRosCGujjmKcAWxrYFg638wl1L7u4hZkwYVso3mOKsz6m6cN8hOE8C2JoJYVPI3eoyHz5bD7tvt6N_3Frbzah9c7HRL-_0gk-hcLNyf8c60C-iT22bF6EB6J99JBwEpxRqngX9vYi6eNcwP8bTlRxJGCHuuxiLem7opSU9IXDLOtwyU4zcDQuLiEg0YZK2NOufJRoWFKLz5uiSD4k2JC8kL4J7BPFn_TLAP8JXsR1kLyuNPESPjIkwRNErK1xHoBpKDOHsfoNjt0QtgmLUr6RLlCFMdS_EMOKjNlId1T25aloRi82TsEyYDGNe95rBdIQ6HbkVglaVxo9VWywWEz9Jhnyf9VZ6bE4RkYcQBOFI8VAE038jFzOPFXNsYBZqNZn6jDPxGLxR9erDipDjfugWOKLn4lex5qPTjwUDizvdlGrc0XRZ0CkxsO1VPeMzT8EhqG6HiI7hhC2npmId-Evt9zHO90NngtFFgLlABkdJpQ7tPXMxrcf2QgRdSGgNxZaNB8UTJvuJVLm70dFby6-r9Iqt-WEM5nZcoJBPtkwMtDIkNg7EdxEm47WkCmzd_KVYpi3KV8DXTcR_9tflhIHccXOZGh9iRD9c-BMUG2Gb3MW2GDd-Nrbz7GZWsuV0B_m8Fjf3EtgPg-6tH9jlZHg1GpWBoEJEnmRU-INy4UkTfaycINn0lVC8&uuid=eeb499b0-146f-41a6-876b-e425597f5ad5&authuser=0&nonce=19bqaejp9p98k&user=13206948309297713483&hash=s8gti0h8a58rbkuohho60oo3ld8bvlt1"><i class="fa fa-download"></i> Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="con" class="detail">
+                <div id="img1"><img id="imgP" width="250" src="img/pic.jpg" alt="pic's malek"></div>
+                <div class="txt">
+                    <h1 id="txtP1" style="text-align: left;direction: rtl;">مرحبا، انا مالك حسام وعمري عشر سنوات واحب البرمجة
+                        وخاصةً برمجة الالعاب وهذا الموقع فيه
+                        كل العابي التي صنعتها وسأصنعها
+                    </h1>
+
+                    <div class="social">
+                        <a id="face1" href="https://www.facebook.com/profile.php?id=100080914314181" class="fa fa-facebook"></a>
+                        <a id="tik1" class="tik" href="https://www.tiktok.com/@dead_code102?lang=ar"><img class="tik" width="50px" src="img/tk.jpg" alt="tiktok logo"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <footer>
+                <div class="make"><p>created by MOhamed hossam ❤</p></div>
+            </footer>
+        </div>
+
+        <script src="programs/app.js"></script>
+        <script src="programs/update.js"></script>
+    </body>
+</html>
