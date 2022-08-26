@@ -1,10 +1,9 @@
 import time
 from tkinter import *
-from git import Repo
+from tkinter import messagebox
+
 
 jsFile = open('update.js', 'a');jsFile2 = open('update1.js', 'a')
-
-gitRepo = r'"E:\\mohamed\\coding\websites\DeadCode\DeadCode-store\.git"'
 
 
 def program():#the program
@@ -65,16 +64,8 @@ def program():#the program
     socialLink.pack(side=TOP, expand=True, fill=X)
 
     def GitUpdate():
-        try:
-            repo = Repo(gitRepo)
-            repo.git.add(update=True)
-            repo.index.commit(str(input('Commit:')))
-            origin = repo.remote(name='origin')
-            origin.push()
+        messagebox.showerror("ops..!", "تقريبا فيه باجايه هنا و مش هتشتغل\nاعمل بلوحة الاوامر ياخي \nيخربيت الكسل:(")
 
-        except:
-            
-            print("ERROR!!")
 
     updateBtn = Button(window, text="Update website", fg="white", bg="darkred", font=('verdana', 20, 'bold'), command=GitUpdate)
     updateBtn.pack(side=BOTTOM,fill=X)
